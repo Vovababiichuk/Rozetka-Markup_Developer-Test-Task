@@ -1,0 +1,29 @@
+.case {
+	background-color: $colorLight;
+	padding: 92px 0;
+}
+
+.case__content {
+	position: relative;
+}
+
+.case__inner span:nth-child(2) {
+	position: absolute;
+	left: 1114px;
+	top: 217px;
+	width: 300px;
+	letter-spacing: 2px;
+}
+
+.case__inner span:nth-child(3) {
+	position: absolute;
+	left: 1114px;
+	top: 564px;
+	letter-spacing: 1px;
+}
+
+.case__info {
+	font-size: 38px;
+	line-height: 1.2;
+	color: rgb(29, 29, 27);
+}

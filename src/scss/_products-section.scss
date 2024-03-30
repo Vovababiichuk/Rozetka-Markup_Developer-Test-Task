@@ -1,0 +1,30 @@
+.products {
+	background-color: $colorLight;
+	padding-bottom: 80px;
+}
+
+.products__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.products__item-content {
+	padding: 12px 0;
+}
+
+.partners__item-title {
+	font-size: 60px;
+	line-height: 1.2;
+	color: $colorYellow;
+	margin-bottom: 20px;
+	letter-spacing: 3px;
+}
+
+.partners__item-description {
+	font-size: 36px;
+	line-height: 1.2;
+	color: rgb(29, 29, 27);
+	letter-spacing: 0.1px;
+}

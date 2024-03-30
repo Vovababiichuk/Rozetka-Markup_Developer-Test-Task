@@ -1,0 +1,114 @@
+.main__body {
+	max-width: ($containerWidthLg + $containerPaddingLg) + px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 $containerSidePaddingLg + px;
+}
+
+// Container
+.container {
+	max-width: ($containerWidth + $containerPadding) + px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 $containerSidePadding + px;
+
+	@media (max-width: $breakpoint1440) {
+		max-width: 1200px;
+	}
+
+	@media (max-width: $breakpoint1024) {
+		max-width: 970px;
+	}
+
+	@media (max-width: $breakpoint768) {
+		max-width: 740px;
+	}
+
+	@media (max-width: $breakpoint375) {
+		max-width: none;
+	}
+}
+
+// Body & Locked
+body {
+	font-family: $fontMain;
+	font-weight: 400;
+	color: $colorLight;
+	font-size: 18px;
+	line-height: 1.2;
+	background-color: #242424;
+
+	&.locked {
+		overflow: hidden;
+	}
+	// Dark mode styles
+	&.dark {
+		background: #242424;
+	}
+}
+
+// ===================Global styles PORTEN===================
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.sticky {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	animation-name: navbar;
+	animation-duration: 0.4s;
+	z-index: 1000;
+}
+
+@keyframes navbar {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+// .title {
+// 	font-family: $fontSecondary;
+// 	font-weight: 700;
+// 	line-height: 1.3;
+// 	font-size: 36px;
+// 	text-align: center;
+// 	color: $colorLight;
+// }
+
+// .title::after {
+// 	content: '';
+// 	display: block;
+// 	width: 120px;
+// 	height: 1px;
+// 	background-color: $colorLight;
+// 	margin-top: 36px;
+// 	margin: 36px auto 0;
+// }
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #34261f;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #3f2d25;
+}
