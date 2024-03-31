@@ -11,22 +11,6 @@
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 $containerSidePadding + px;
-
-	@media (max-width: $breakpoint1440) {
-		max-width: 1200px;
-	}
-
-	@media (max-width: $breakpoint1024) {
-		max-width: 970px;
-	}
-
-	@media (max-width: $breakpoint768) {
-		max-width: 740px;
-	}
-
-	@media (max-width: $breakpoint375) {
-		max-width: none;
-	}
 }
 
 // Body & Locked
@@ -105,10 +89,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #34261f;
+	background-color: $colorYellow;
 	border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background-color: #3f2d25;
+	background-color: #ef8a1d;
 }
